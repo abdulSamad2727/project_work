@@ -1,0 +1,4 @@
+{"id": 1, "input": "show all trips for abc", "expected": "SELECT * FROM trips WHERE company='abc'", "actual": "select * from trips", "pass": false, "notes": "returned xyz trips also"}
+{"id": 2, "input": "average trip cost", "expected": "200", "actual": "100, 500, 200", "pass": false, "notes": "did not calculate average"}
+{"id": 3, "input": "no shows last month", "expected": "route list", "actual": "all trips", "pass": false, "notes": "no date filter"}
+{"id": 4, "input": "users", "expected": "users list", "actual": "[(1, 'rahul', 'abc'), (2, 'priya', 'xyz'), (3, 'amit', 'abc')]", "pass": true, "notes": "ok"}
